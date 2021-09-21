@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class MyController {
-	
+	private static final String URL = "https://app.java-techsols.com";
 	@GetMapping(value = "/hello")
 	public String hello() {
 		//comments
