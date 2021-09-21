@@ -8,7 +8,7 @@ public class MyController {
 	
 	@GetMapping(value = "/hello")
 	public String hello() {
-		
+		//comments
 		return "Hello Jenkins spring boot app..."; 
 	}
 
