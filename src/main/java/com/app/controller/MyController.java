@@ -8,10 +8,10 @@ public class MyController {
 	private static final String URL = "https://app.java-techsols.com";
 	private static final String DATA = "data";
 	private static final String INFO = "info";
-	@GetMapping(value = "/hello")
-	public String hello() {
+	@GetMapping(value = "/hello/{id}")
+	public String hello(@Pathvariable String id) {
 		//comments
-		return "Hello Jenkins spring boot app..."; 
+		return "Hello Jenkins spring boot app..." +id; 
 	}
 
 }
